@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SignupComponent } from './client/activity/signup/signup.component';
@@ -28,7 +29,8 @@ import { HomeComponent } from './client/home/home.component';
       {
         path: 'activity/list', component: ListComponent
       }
-    ])
+    ]),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
