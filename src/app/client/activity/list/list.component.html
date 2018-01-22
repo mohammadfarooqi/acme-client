@@ -1,3 +1,22 @@
-<p>
-  list works!
-</p>
+<div class="row">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Activity</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of data">
+        <td>{{ row.FirstName }}</td>
+        <td>{{ row.LastName }}</td>
+        <td>{{ row.Email }}</td>
+        <td>{{ row.Activity }}</td>
+        <td>{{ row.Comment }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
